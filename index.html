@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Portifólio - Ígor Centofante</title>
+
+  <link rel="icon" type="image/x-icon" href="/src/img/favicon.ico">
+  <meta name="description" content="Portifólio Ígor Centofante">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#26282b" />
+
+  <!--========CSS imports===========-->
+  <link rel=" stylesheet" href="src\css\reset.css">
+  <link rel="stylesheet" href="src\css\style.css">
+
+  <!--========JS imports===========-->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="src/js/menu.js"> </script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+</head>
+
+<body>
+  <header id="header">
+    <div class="header-area">
+      <img class="logo" src="src/img/logo.jpg" alt="logo" />
+
+      <nav>
+        <input id="btn-mobile" type="checkbox" style="display: none" />
+        <label for="btn-mobile">
+          <div class="btn-mobile active" id="btn-mobile"></div>
+        </label>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#footer">Contatos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="content-header">
+    <div class="left-header">
+      <h1 class="name" data-aos="fade-down">Ígor Centofante</h1>
+      <h2 class="description" data-aos="fade-up">Desenvolvedor e estudante.</h2>
+      <div class="social-icons">
+        <a href="mailto:igorcentofante@gmail.com" target="_blank"><img class="email" src="src/img/email.svg"
+            alt="Email icon" data-aos="fade-left" data-aos-duration="500"></a>
+        <a href="https://www.linkedin.com/in/igor-centofante/" target="_blank"><img class="linkedin2"
+            src="src/img/linkedin2.svg" alt="LinkedIn icon" data-aos="fade-left" data-aos-duration="1000"></a>
+        <a href="https://github.com/IgorCentofante" target="_blank"><img class="github" src="src/img/github.svg"
+            alt="GitHub icon" data-aos="fade-left" data-aos-duration="1500"></a>
+      </div>
+    </div>
+
+    <div class="right-header">
+      <img class="programming" src="src/img/programming.svg" alt="programming man" data-aos="fade-left" />
+    </div>
+  </section>
+
+  <section class="about-me">
+    <div data-aos="fade-left">
+      <h1 class="about-title">Olá.</h1>
+      <p class="about-paragraph">Meu nome é Ígor Centofante e tenho 18 anos.</p>
+      <p class="about-paragraph">Eu moro em Novo Hamburgo, Rio Grande do Sul.</p>
+    </div>
+
+    <div data-aos="fade-left">
+      <h2 class="about-title">Programação</h2>
+      <p class="about-paragraph">Conheço algumas linguagens como Html, CSS, Javascript e Python.</p>
+      <p class="about-paragraph">Com tais conhecimentos, criei alguns projetos de sites e bots para o discord.</p>
+    </div>
+
+    <div data-aos="fade-left">
+      <h3 class="about-title">Projetos</h3>
+      <p class="about-paragraph">Tenho alguns projetos que você pode conferir! Se desejar, você pode rolar até a seção
+        de projetos.</p>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="introduction-projects">
+      <h1 data-aos="fade-down">Meus projetos</h1>
+      <h2 data-aos="fade-left">Aqui estão meus projetos, envolvendo sites e bots</h2>
+    </div>
+
+    <section class="project-cards">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;" data-aos="zoom-in">
+              <img src="src/img/register-sistem.jpeg" class="card-img-top" alt="register sistem">
+              <div class="card-body">
+                <h5 class="card-title">Tela de login</h5>
+                <p class="card-text">Uma simples tela de login feita para um site de automações residenciais.</p>
+                <a href="https://igorcentofante.github.io/Smart-House/login.html" target="_blank"
+                  class="btn btn-primary">Saber mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;" data-aos="zoom-in">
+              <img src="src/img/cop26.png" class="card-img-top" alt="Blog COP 26">
+              <div class="card-body">
+                <h5 class="card-title">Blog COP 26</h5>
+                <p class="card-text">Trabalho de sociologia realizado em grupo. No qual eu e mais dois colegas criamos
+                  um “blog” sobre a COP 26.</p>
+                <a href="https://igorcentofante.github.io/COP-26/" target="_blank" class="btn btn-primary">Saber
+                  mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;" data-aos="zoom-in">
+              <img src="src/img/panaceia.png" class="card-img-top" alt="Hospital Panaceia">
+              <div class="card-body">
+                <h5 class="card-title">Hospital Panaceia</h5>
+                <p class="card-text">Página em ReacJS de um hospital feita em grupo durante o projeto #TeuFuturo2021.
+                </p>
+                <a href="https://github.com/IgorCentofante/Final-Project-of-React" target="_blank"
+                  class="btn btn-primary">Saber mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="project-cards2">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;" data-aos="zoom-in">
+              <img src="src/img/icaro.png" class="card-img-top" alt="Bot icaro">
+              <div class="card-body">
+                <h5 class="card-title">Bot Ícaro</h5>
+                <p class="card-text">Um bot de músicas para Discord, que criei utilizando algumas bibliotecas e API'S em
+                  Python.</p>
+                <a href="https://github.com/IgorCentofante/Final-Project-of-React" target="_blank"
+                  class="btn btn-primary">Saber mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;" data-aos="zoom-in">
+              <img src="src/img/freeway.png" class="card-img-top" alt="Ratatouille Freeway">
+              <div class="card-body">
+                <h5 class="card-title">Ratatouille Freeway</h5>
+                <p class="card-text">Recriação do jogo Freeway, o qual foi lançado para o Atari 2600 em 1981.</p>
+                <a href="https://editor.p5js.org/IgorEmanuelFDS/full/8YMEsb0cA" target="_blank"
+                  class="btn btn-primary">Saber mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;" data-aos="zoom-in">
+              <img src="src/img/pong.png" class="card-img-top" alt="Pong">
+              <div class="card-body">
+                <h5 class="card-title">Pong P5</h5>
+                <p class="card-text">Recriação do jogo Pong, o qual tinha gráficos bidimensionais, desenvolvido pela
+                  Atari e lançado originalmente em 1972</p>
+                <a href="https://editor.p5js.org/IgorEmanuelFDS/full/hP9lcRpgk" target="_blank"
+                  class="btn btn-primary">Saber mais</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <footer id="footer">
+    <p class="autor">Desenvolvido por <a href="https://github.com/IgorCentofante">Ígor Emanuel Centofante</a></p>
+    <div class="footer-links">
+      <p><img class="linkedin" src="src/img/linkedin.svg" alt="linkedin icon" /><a
+          href="https://www.linkedin.com/in/igor-centofante/" target="_blank">LinkedIn</a><img class="email"
+          src="src/img/email.svg" alt="E-mail icon" /><a href="mailto:igorcentofante@gmail.com"
+          target="_blank">E-mail</a></p>
+    </div>
+  </footer>
+
+  <!--========Animation import===========-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    function typeWriter(elemento) {
+      const textoArray = elemento.innerHTML.split('');
+      elemento.innerHTML = '';
+      textoArray.forEach((letra, i) => {
+        setTimeout(() => elemento.innerHTML += letra, 100 * i);
+      });
+    }
+
+    const titulo = document.querySelector('.description');
+    typeWriter(titulo);
+  </script>
+  <!--========Bootstrap import===========-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

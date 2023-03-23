@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@500&display=swap');
+@import url('https://fonts.cdnfonts.com/css/heavitas');
+
+:root {
+  --color-primary: rgb(3, 4, 5);
+  --color-secundary: rgb(14, 15, 18);
+  --color: rgb(249, 249, 249);
+  --font-family: 'Overpass', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(38, 40, 43);
+  border-radius: 10px;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-primary);
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--color);
+  margin-right: 0.5rem;
+}
+
+nav a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+.header-area {
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-primary);
+  padding-right: 1rem;
+}
+
+.logo {
+  width: 5vw;
+  border-radius: 100%;
+  padding: 1em;
+  height: auto;
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  gap: 60px;
+}
+
+.content-header {
+  background: var(--color-secundary);
+  color: var(--color);
+  font-family: 'Heavitas', 'Overpass', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-header {
+  width: 50vw;
+  height: 100vh;
+  margin-top: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-header h1 {
+  font-family: 'heavitas';
+  font-size: 4em;
+}
+
+.left-header h2::after {
+  content: '|';
+  opacity: 1;
+  margin-left: 5px;
+  display: inline-block;
+  animation: blink .7s infinite;
+}
+
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.left-header h2 {
+  font-family: 'overpass';
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.e-mail {
+  height: 6vh;
+}
+
+.linkedin2 {
+  height: 5vh;
+}
+
+.github {
+  height: 5vh;
+}
+
+.right-header {
+  width: 50vw;
+  height: 100vh;
+  margin-top: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.programming {
+  width: 30vw;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-secundary);
+  text-align: left;
+  padding: 1vw 45vh;
+}
+
+.about-title {
+  color: var(--color);
+  font-size: 3.2rem;
+  font-family: 'Overpass';
+  margin-top: 8vh;
+}
+
+.about-paragraph {
+  color: var(--color);
+  font-size: 1.4rem;
+  font-family: 'Overpass';
+  margin: 0;
+}
+
+.projects {
+  background: var(--color-secundary);
+  color: var(--color);
+}
+
+.introduction-projects {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+.introduction-projects h1 {
+  font-size: 4rem;
+}
+
+.introduction-projects h2 {
+  font-size: 1.4rem;
+}
+
+.project-cards {
+  display: flex;
+  flex-direction: unset;
+}
+
+.project-cards2 {
+  display: flex;
+}
+
+.card {
+  border: 1px solid rgb(3, 4, 5) !important;
+  margin: 5vh;
+}
+
+.card-body {
+  background: var(--color-primary);
+}
+
+#footer {
+  padding: 50px 0px 20px 0px;
+  width: 100vw;
+
+  background-color: var(--color-primary);
+  color: rgb(255, 255, 255);
+  font-size: 1.4rem;
+}
+
+.footer-links {
+  text-align: center;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  padding-left: 1%;
+}
+
+.autor {
+  margin-top: 70px;
+  width: 100%;
+  text-align: center;
+}
+
+.autor a {
+  text-decoration: none;
+  color: #8d8d8d;
+}
+
+.linkedin {
+  width: 1.5vw;
+}
+
+.email {
+  width: 1.8vw;
+  margin-left: 1%;
+}
+
+@media only screen and (max-width: 600px) {
+
+  /*NavBar*/
+  header {
+    display: block;
+    align-self: start;
+  }
+
+  .header-area {
+    justify-content: flex-end;
+    padding: 0%;
+    min-height: 8vh;
+  }
+
+  .header-area .logo {
+    display: none;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 100%;
+    width: 45vw;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 12vh;
+    background: var(--color-primary);
+    transition: 0.5s ease;
+  }
+
+  .menu.active {
+    left: 0;
+    transition: 0.5s ease;
+    z-index: 999;
+  }
+
+  .content-header {
+    flex-direction: column;
+  }
+
+  .left-header {
+    width: 100%;
+    height: 30%;
+  }
+
+  .left-header h1 {
+    font-size: 2em;
+  }
+
+  .e-mail {
+    height: 10vh;
+  }
+
+  .linkedin2 {
+    height: 5vh;
+  }
+
+  .github {
+    height: 4vh;
+  }
+
+  .right-header {
+    width: 100vw;
+    height: 70%;
+    padding: 0%;
+    margin-top: 0;
+  }
+
+  .programming {
+    width: 80%;
+    height: auto;
+  }
+
+  .about-me {
+    padding: 10%;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-paragraph {
+    font-size: 1rem;
+  }
+
+  .introduction-projects {
+    padding-top: 20vh;
+  }
+
+  .introduction-projects h1 {
+    font-size: 3rem;
+  }
+
+  .introduction-projects h2 {
+    font-size: 0.9rem;
+  }
+
+  .project-cards, .project-cards2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer {
+    width: 100vw;
+    right: auto;
+    padding: 2% 1% 2% 1%;
+  }
+
+  #footer .autor {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  .linkedin {
+    width: 4vw;
+    margin-left: 2%;
+  }
+
+  .email {
+    width: 5vw;
+    margin-left: 2%;
+  }
+
+  /*Botão Hamburguer*/
+  #btn-mobile {
+    display: block;
+    z-index: 9999;
+    align-items: right;
+    top: 0.5vh;
+    left: 1%;
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    position: absolute;
+  }
+
+  #btn-mobile::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 70%;
+    height: 10%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    transition: 1s ease;
+  }
+
+  #btn-mobile::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 6%;
+    width: 40%;
+    height: 10%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    transition: 1s ease;
+  }
+
+  #btn-mobile:checked~label .btn-mobile:after {
+    transform: rotate(225deg);
+    top: 45%;
+    left: 15%;
+  }
+
+  #btn-mobile:checked~label .btn-mobile:before {
+    transform: rotate(-405deg);
+    top: 45%;
+    left: 15%;
+    width: 70%;
+    height: 10%;
+  }
+}
